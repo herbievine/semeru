@@ -12,7 +12,7 @@ const Camera: React.FC<CameraProps> = ({ props }) => {
   return (
     <Svg
       viewBox="0 0 512 448"
-      fill={theme.text}
+      fill={props?.color ? props.color : theme.text}
       // xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

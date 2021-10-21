@@ -5,6 +5,7 @@ import Messages from '../components/svg/Messages'
 import Button from '../components/ui/Button'
 import InfoHeader from '../components/ui/InfoHeader'
 import ThemedView from '../components/ui/ThemedView'
+import { parseError } from '../lib/parseError'
 import { IRouterProps } from '../types/globals'
 
 const s = StyleSheet.create({

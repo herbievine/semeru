@@ -83,6 +83,7 @@ const Verification: React.FC<IRouterProps<'Verification'>> = ({
         <Text style={[s.error, { color: theme.error }]}>{error}</Text>
         <Input
           onChange={(val) => setCode(val)}
+          placeholder="Confirm Code"
           type="numeric"
           style={{ marginBottom: '1rem' }}
           limit={6}

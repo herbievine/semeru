@@ -1,0 +1,28 @@
+{
+  "errors": {
+    "account": [
+      {
+        "code": "0001",
+        "message": "a"
+      },
+      {
+        "code": "0001",
+        "message": "b"
+      },
+      {
+        "code": "0001",
+        "message": "c"
+      },
+      {
+        "code": "0001",
+        "message": "d"
+      }
+    ],
+    "chats": [
+      {
+        "code": "0011",
+        "message": "Unable to send message"
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ import { useTheme } from '../../hooks/useTheme'
 
 interface InputProps {
   onChange: (state: string) => void
+  placeholder: string
   type: 'default' | 'numeric' | 'email-address'
   limit?: number
   style?: StyleProp<ViewStyle>
@@ -26,7 +27,13 @@ const s = StyleSheet.create({
   },
 })
 
-const Input: React.FC<InputProps> = ({ onChange, type, limit, style }) => {
+const Input: React.FC<InputProps> = ({
+  onChange,
+  placeholder,
+  type,
+  limit,
+  style,
+}) => {
   const [text, setText] = useState('')
   const { theme } = useTheme()
 
@@ -41,7 +48,7 @@ const Input: React.FC<InputProps> = ({ onChange, type, limit, style }) => {
           }}
           value={text}
           maxLength={limit}
-          placeholder="Phone number"
+          placeholder={placeholder}
           keyboardType={type}
         />
       </View>

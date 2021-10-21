@@ -12,7 +12,7 @@ const Arrow: React.FC<ArrowProps> = ({ props }) => {
   return (
     <Svg
       viewBox="0 0 438 266"
-      fill={theme.text}
+      fill={props?.color ? props.color : theme.text}
       // xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

@@ -1,9 +1,8 @@
 import React from 'react'
 import ThemedText from '../components/ui/ThemedText'
+import { ITabsProps } from '../types/globals'
 
-interface UserProps {}
-
-const User: React.FC<UserProps> = ({}) => {
+const User: React.FC<ITabsProps<'User'>> = ({}) => {
   return <ThemedText>User</ThemedText>
 }
 

@@ -12,7 +12,7 @@ const Comments: React.FC<CommentsProps> = ({ props }) => {
   return (
     <Svg
       viewBox="0 0 576 448"
-      fill={theme.text}
+      fill={props?.color ? props.color : theme.text}
       // xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

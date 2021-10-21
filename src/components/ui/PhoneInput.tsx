@@ -43,7 +43,6 @@ const s = StyleSheet.create({
   divider: {
     height: '100%',
     width: '1px',
-    backgroundColor: 'white',
   },
 })
 
@@ -71,7 +70,7 @@ const PhoneInput: React.FC<PhoneInputProps> = ({ onChange, style }) => {
           </ThemedText>
         </View>
       </Pressable>
-      <View style={s.divider} />
+      <View style={[s.divider, { backgroundColor: theme.text }]} />
       <View style={s.input}>
         <TextInput
           style={{ color: theme.text, fontFamily: 'Poppins_600SemiBold' }}
